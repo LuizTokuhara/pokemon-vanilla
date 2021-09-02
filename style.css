@@ -1,0 +1,130 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+.search-container {
+    width: 70%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.search-container img {
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-icon {
+    position: absolute;
+    color: #3B4CCA;
+    font-size: 50px !important;
+    right: 10px;
+    top: 12px;
+}
+
+input[type=text] {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 12px 60px 12px 20px;
+    margin: 8px auto;
+    border-radius: 4px;
+    font-size: 30px;   
+    font-weight: 800;
+    color: #3B4CCA;
+}
+
+input[type=text]:focus {
+    border: 1px solid #b7bacf;
+}
+
+input[type=submit] {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    background: #3B4CCA;
+    border: 1px solid #3B4CCA;
+}
+
+::placeholder {
+    color: #E0E0E0;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #E0E0E0;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #E0E0E0;
+}
+
+.alert {
+    display: none;
+    width: 100%;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container img {
+        width: 70%;
+    }
+
+    input[type=text] {
+        font-size: 20px;   
+    }
+
+    input[type=submit] {
+        font-size: 15px;
+    }
+
+    .search-icon {
+        font-size: 30px !important;
+        right: 10px;
+        top: 18px;
+    }
+}

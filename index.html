@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <title>Pokémon</title>
+</head>
+<body>
+
+    <main class="wrapper">
+    
+        <section class="container search-container">
+            <img src="img/logo.png" alt="Pokémon logo" />
+            <form class="form-container">
+                <fieldset>
+                    <i class="material-icons search-icon">search</i>
+    
+                    <input type="text" placeholder="Search Pokémon" id="inputPokemon" autocomplete="off">
+                    
+                </fieldset>
+                <input class="submitPokemon button-primary" type="submit" value="Search">
+                <p class="alert">Ops, nothing has been found!</p>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>Pokémon and Pokémon characters are trademark of Nintendo</footer>
+    
+
+    <!-- popup -->
+    <div class="popup-wrapper">
+        <span class="popup-close-button">
+            <i class="material-icons popup-close-icon">close</i>
+        </span>
+        <div class="popup-container">
+            <div class="popup-image-container">
+                <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"/>
+            </div>
+            <h2 class="pokemon-name">Pikachu</h2>
+            <span class="pokemon-height pokemon-info float-left">4" height</span>
+            <span class="pokemon-weight pokemon-info float-right">60 kg</span>
+        </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
